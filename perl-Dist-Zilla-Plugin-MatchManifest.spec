@@ -1,9 +1,9 @@
 %define upstream_name    Dist-Zilla-Plugin-MatchManifest
-%define upstream_version 0.03
+%define upstream_version 4.00
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Ensure that MANIFEST is correct
 License:    GPL+ or Artistic
@@ -13,9 +13,15 @@ Source0:    http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstre
 
 BuildRequires: perl(Dist::Zilla)
 BuildRequires: perl(Moose)
+BuildRequires: perl(Throwable)
 BuildRequires: perl(Moose::Autobox)
 BuildRequires: perl(Text::Diff)
+BuildRequires: perl(Role::HasMessage)
+BuildRequires: perl(Role::Identifiable::HasIdent)
 BuildRequires: perl(autodie)
+BuildRequires: perl(MooseX::OneArgNew)
+BuildRequires: perl(Test::Fatal)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
