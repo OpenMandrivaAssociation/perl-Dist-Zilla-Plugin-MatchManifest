@@ -1,2 +1,4 @@
+removed_sources:
+  Dist-Zilla-Plugin-MatchManifest-4.00.tar.gz: a91012982dbf0130d1dd927e514213f66b827ab9
 sources:
-  "Dist-Zilla-Plugin-MatchManifest-4.00.tar.gz": a91012982dbf0130d1dd927e514213f66b827ab9
+  Dist-Zilla-Plugin-MatchManifest-4.01.tar.gz: 5ea5fdc79473d390cd3f05dad5030179dffbfae3

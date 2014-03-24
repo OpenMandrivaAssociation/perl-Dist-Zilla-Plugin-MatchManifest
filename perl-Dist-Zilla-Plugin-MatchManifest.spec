@@ -1,9 +1,9 @@
 %define upstream_name    Dist-Zilla-Plugin-MatchManifest
-%define upstream_version 4.00
+%define upstream_version 4.01
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Ensure that MANIFEST is correct
 License:	GPL+ or Artistic
@@ -48,4 +48,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
 
