@@ -1,15 +1,13 @@
 %define upstream_name    Dist-Zilla-Plugin-MatchManifest
-%define upstream_version 6.000
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	6.000
+Release:	2
 
 Summary:	Ensure that MANIFEST is correct
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/madsen/dist-zilla-plugin-matchmanifest
-Source0:	https://cpan.metacpan.org/authors/id/C/CJ/CJM/Dist-Zilla-Plugin-MatchManifest-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/C/CJ/CJM/Dist-Zilla-Plugin-MatchManifest-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -33,7 +31,7 @@ Dist::Zilla. If not, it will display the differences and (if STDIN & STDOUT
 are TTYs) offer to update the _MANIFEST_.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
